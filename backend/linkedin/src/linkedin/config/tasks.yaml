@@ -1,0 +1,67 @@
+# config/tasks.yaml
+
+trend_task:
+  description: >
+    Fetch today’s top trending {topic} from Serper.
+  expected_output: >
+    A ranked list of the top 3 trending {topic}.
+  agent: trend_agent
+  tool: serper_trends
+
+search_task:
+  description: >
+    Search the web for the latest news on the top trending topic: {topic}
+    Summarize the top 3 results.
+  expected_output: >
+    A short summary of each of the top-3 news items.
+  agent: search_agent
+  tool: serper_search
+
+plan_task:
+  description: >
+    Using the search summary, plan a LinkedIn post:
+    define objective, tone, structure, and key takeaway.
+  expected_output: >
+    A bullet-list plan: objective, tone, outline, and takeaway.
+  agent: planner_agent
+
+write_task:
+  description: >
+    Write the full LinkedIn post draft with a hook, body, and CTA
+    based on the plan and search results.
+  expected_output: >
+    The complete LinkedIn post text.
+  agent: writer_agent
+
+seo_task:
+  description: >
+    Enhance the draft by inserting 5–10 hashtags,
+    keywords, and SEO optimizations.
+  expected_output: >
+    SEO-optimized post text with hashtags.
+  agent: seo_agent
+
+review_task:
+  description: >
+    Review and polish the SEO-optimized post:
+    check grammar, style, and professional impact.
+  expected_output: >
+    A final, publication-ready post text.
+  agent: reviewer_agent
+
+export_task:
+  description: >
+    Export the final post to Markdown,
+    adding headers, bold formatting, and a timestamped filename.
+  expected_output: >
+    A .md file containing the styled post.
+  agent: exporter_agent
+  output_file: "linkedin_post_{timestamp}.md"
+
+publish_task:
+  description: >
+    Publish the Markdown post to LinkedIn via the API.
+  expected_output: >
+    A success/failure message with the LinkedIn post URL.
+  agent: publisher_agent
+  tool: linkedin_publish

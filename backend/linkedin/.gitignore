@@ -1,0 +1,21 @@
+.env
+__pycache__/
+.DS_Store
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+.env
+
+# Node artifacts
+node_modules/
+dist/
+build/
+
+# IDE files
+.vscode/
+.idea/
+
+# Mac or Linux swap files
+*.swp
+EOF
