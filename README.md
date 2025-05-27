@@ -1,4 +1,4 @@
-LinkedIn AI Poster
+<p align="center">LinkedIn AI Poster<p>
 
 ![Capture d’écran du 2025-05-27 12-43-53](https://github.com/user-attachments/assets/f472f7df-ded4-4fda-86f9-9a4d09eb01fb)
 
