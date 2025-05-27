@@ -1,5 +1,7 @@
 LinkedIn AI Poster
 
+![Capture d’écran du 2025-05-27 12-43-53](https://github.com/user-attachments/assets/f472f7df-ded4-4fda-86f9-9a4d09eb01fb)
+
 ![Capture d’écran du 2025-05-27 12-41-49](https://github.com/user-attachments/assets/b3b3e84c-c368-491a-995d-1a443bf452e9)
 
 A cutting-edge full-stack solution that seamlessly marries a React dashboard with a CrewAI multi-agent backend to research, draft, optimize, and publish LinkedIn posts — leveraging local Ollama/Mistral LLMs (you can use any LLM (llama3, deepseek-r1, qwen ...)) and real-time, topic-scoped trend data.
